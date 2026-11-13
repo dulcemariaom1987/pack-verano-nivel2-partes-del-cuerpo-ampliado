@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pack verano jugando en inglés – Nivel 2 – Partes del cuerpo</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&display=swap">
+<style>
+:root{--bg:#10113a;--ink:#fff;--mut:#cfd3ff;--c1:#27f0ff;--c2:#ff4fd8;--c3:#ffe44d;--c4:#4dff9a;--c5:#ff9a3d;--bad:#ff5d73;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;min-height:100%;background:radial-gradient(circle at 15% 0,#3a1d84,transparent 45%),radial-gradient(circle at 90% 20%,#0a5c85,transparent 40%),var(--bg);color:var(--ink);font:500 1.05rem/1.4 Fredoka,"Trebuchet MS",system-ui,sans-serif}
+button{font-family:inherit;color:inherit}
+header{text-align:center;padding:22px 12px 6px;position:relative}
+h1{margin:0;font-size:clamp(2.1rem,8.5vw,4.6rem);line-height:1.08;font-weight:700;background:linear-gradient(90deg,#27f0ff,#ff4fd8,#ffe44d,#4dff9a,#27f0ff);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-stroke:.6px rgba(255,255,255,.45);filter:drop-shadow(0 0 5px rgba(255,79,216,.85)) drop-shadow(0 0 16px rgba(39,240,255,.55));animation:glow 3s ease-in-out infinite alternate,flow 8s linear infinite}
+h1 .l2{display:block;font-size:.62em}
+@keyframes glow{to{filter:drop-shadow(0 0 7px rgba(255,228,77,.9)) drop-shadow(0 0 22px rgba(255,79,216,.65))}}
+@keyframes flow{to{background-position:200% 0}}
+.sub{margin:6px 0 0;color:var(--mut)}
+.deco{position:absolute;font-size:2rem;animation:float 3s ease-in-out infinite}
+.deco.a{left:4%;top:20px}.deco.b{right:4%;top:20px;animation-delay:.8s}
+@keyframes float{50%{transform:translateY(-9px)}}
+nav{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;max-width:980px;margin:0 auto;padding:12px}
+nav button{display:flex;flex-direction:column;align-items:center;min-width:82px;padding:8px 10px;border:2px solid var(--c);border-radius:16px;background:rgba(255,255,255,.07);font-size:.85rem;cursor:pointer;box-shadow:0 0 9px var(--c);transition:.2s}
+nav .ic{font-size:1.5rem}
+nav button.on{background:var(--c);color:#10113a;transform:translateY(-3px) scale(1.06)}
+main{max-width:980px;margin:0 auto;padding:6px 12px 40px}
+.panel{display:none;background:rgba(29,31,90,.88);border:2px solid rgba(255,255,255,.15);border-radius:24px;padding:18px;box-shadow:0 10px 40px rgba(0,0,0,.4)}
+.panel.on{display:block;animation:pop .45s ease}
+@keyframes pop{from{opacity:0;transform:translateY(14px) scale(.97)}}
+@keyframes shake{25%{transform:translateX(-7px)}75%{transform:translateX(7px)}}
+@keyframes wig{25%{transform:rotate(-6deg) scale(1.1)}75%{transform:rotate(6deg) scale(1.1)}}
+h2{margin:0 0 4px;font-size:1.7rem;color:var(--c3)}
+.how{color:var(--mut);margin:0 0 14px}
+.center{text-align:center}
+.btn{border:0;border-radius:999px;padding:12px 22px;font-weight:700;font-size:1rem;color:#10113a;background:linear-gradient(135deg,var(--c1),var(--c4));cursor:pointer;box-shadow:0 4px 0 rgba(0,0,0,.35);margin:6px 4px}
+.btn:active{transform:translateY(3px);box-shadow:none}
+.btn.alt{background:linear-gradient(135deg,var(--c3),var(--c5))}
+.btn.pk{background:linear-gradient(135deg,var(--c2),var(--c5))}
+.msg{min-height:1.7em;text-align:center;font-weight:700;margin:8px 0}
+.msg.ok{color:var(--c4)}.msg.no{color:var(--bad)}
+.prog{color:var(--mut);text-align:center;font-size:.9rem}
+.prompt{text-align:center;font-size:1.2rem}
+.big{font-size:4.8rem;line-height:1.1;animation:float 2.5s ease-in-out infinite}
+h3.g{color:var(--c1);margin:14px 0 8px}
+.vgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:12px}
+.vc{background:rgba(255,255,255,.08);border:2px solid var(--c);border-radius:18px;padding:10px;text-align:center;cursor:pointer;display:flex;flex-direction:column;gap:2px}
+.vc .e{font-size:2.6rem}.vc b{font-size:1.3rem}.vc small{color:var(--mut)}
+.vc.say{animation:wig .5s}
+.opts{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin:12px 0}
+.opt{padding:14px;border-radius:16px;border:3px solid rgba(255,255,255,.25);background:rgba(255,255,255,.08);font-size:1.3rem;font-weight:700;cursor:pointer;transition:.15s}
+.opt.ico{font-size:2.6rem}
+.opt.sel{border-color:var(--c3);background:rgba(255,228,77,.2);transform:scale(1.04)}
+.opt.ok{border-color:var(--c4);background:rgba(77,255,154,.25)}
+.opt.no{border-color:var(--bad);background:rgba(255,93,115,.25);animation:shake .4s}
+.opt:disabled{cursor:default}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:12px}.col{display:flex;flex-direction:column;gap:8px}
+.col .opt{margin:0}
+.tiles,.ans{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;min-height:64px;margin:10px 0}
+.ans{border:3px dashed rgba(255,255,255,.3);border-radius:16px;padding:8px}
+.tile{width:54px;height:54px;border:0;border-radius:14px;font-size:1.7rem;font-weight:700;background:linear-gradient(135deg,var(--c3),var(--c5));color:#10113a;cursor:pointer;box-shadow:0 4px 0 rgba(0,0,0,.35)}
+.ans .tile{background:linear-gradient(135deg,var(--c1),var(--c4))}
+.wl{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:14px}
+.chip{padding:6px 14px;border-radius:999px;background:rgba(255,255,255,.12);font-weight:700}
+.chip.f{text-decoration:line-through;color:#10113a}
+.grid{display:grid;grid-template-columns:repeat(10,1fr);gap:3px;max-width:480px;margin:0 auto 8px}
+.cell{aspect-ratio:1;border:0;border-radius:8px;background:rgba(255,255,255,.12);font-weight:700;font-size:clamp(.85rem,3.6vw,1.4rem);padding:0;cursor:pointer}
+.cell.sel{background:var(--c3);color:#10113a}.cell.f{color:#10113a}.cell.no{animation:shake .4s}
+.mem{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;max-width:520px;margin:8px auto}
+.card{position:relative;display:block;width:100%;aspect-ratio:3/4;perspective:600px;border:0;background:none;padding:0;cursor:pointer}
+.in{position:absolute;inset:0;transition:transform .5s;transform-style:preserve-3d}
+.card.up .in{transform:rotateY(180deg)}
+.f1,.f2{position:absolute;inset:0;border-radius:14px;display:flex;align-items:center;justify-content:center;font-weight:700;backface-visibility:hidden;-webkit-backface-visibility:hidden}
+.f1{background:linear-gradient(135deg,var(--c2),var(--c1));font-size:2rem}
+.f2{background:#fff;color:#10113a;transform:rotateY(180deg);font-size:clamp(1rem,4vw,1.4rem)}
+.f2 .e{font-size:clamp(1.8rem,8vw,2.8rem)}
+.card.done .f2{background:#c9ffe2}
+.stage{max-width:300px;margin:0 auto}
+.stage svg{width:100%;height:auto;display:block;overflow:visible}
+.sun{transform-origin:180px 48px;transform-box:view-box;transform:scale(calc(1 + var(--m)*.07));transition:transform 1s;filter:drop-shadow(0 0 10px #ffb02e)}
+.rays{transform-origin:180px 48px;transform-box:view-box;animation:spin calc(9s - var(--m)*1.1s) linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.wrap{transform-box:view-box;transform-origin:110px 284px}
+.body{transform-box:view-box;transform-origin:110px 200px;transform:scale(calc(1 + var(--m)*.035),calc(1 - var(--m)*.12));transition:transform 1.2s cubic-bezier(.3,1.5,.5,1);filter:drop-shadow(0 0 8px rgba(255,79,216,.8))}
+.face{transform:translateY(calc(var(--m)*12.6px));transition:transform 1.2s cubic-bezier(.3,1.5,.5,1)}
+.pud{transform-box:view-box;transform-origin:110px 286px;transform:scale(calc(.15 + var(--m)*.14),calc(.4 + var(--m)*.1));transition:transform 1.2s;opacity:.9}
+.drips{opacity:0}.melt .drips{opacity:1}
+.drips ellipse{animation:drip calc(2.8s - var(--m)*.3s) ease-in infinite}
+@keyframes drip{0%{transform:translateY(0);opacity:0}15%{opacity:1}100%{transform:translateY(84px);opacity:0}}
+.sp text{animation:tw 2s ease-in-out infinite}.sp text:nth-child(2){animation-delay:.6s}.sp text:nth-child(3){animation-delay:1.2s}
+@keyframes tw{50%{opacity:.15}}
+.mh,.mw,.ms{display:none}
+[data-mood=h] .mh,[data-mood=w] .mw,[data-mood=s] .ms{display:inline}
+.win .wrap{animation:bounce .5s ease-in-out infinite alternate}
+@keyframes bounce{to{transform:translateY(-14px) rotate(4deg)}}
+.win .body{animation:hue 2s linear infinite}
+@keyframes hue{from{filter:drop-shadow(0 0 14px #ffe44d) hue-rotate(0deg)}to{filter:drop-shadow(0 0 14px #ffe44d) hue-rotate(360deg)}}
+.win .sp text{animation-duration:.4s}
+.slots{display:flex;gap:8px;justify-content:center;margin:12px 0}
+.slot{width:44px;height:56px;border-bottom:4px solid var(--c3);display:flex;align-items:flex-end;justify-content:center;font-size:2rem;font-weight:700}
+.kb{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;max-width:560px;margin:0 auto}
+.key{width:44px;height:48px;border:0;border-radius:10px;font-weight:700;font-size:1.1rem;background:rgba(255,255,255,.15);cursor:pointer}
+.key:disabled{opacity:.35}.key.ok{background:var(--c4);color:#10113a}.key.ok:disabled{opacity:1}.key.no{background:var(--bad)}
+.end{text-align:center}.stars{font-size:2.6rem}
+.end ul{list-style:none;padding:0;text-align:left;display:inline-block}
+.cf{position:fixed;top:-40px;font-size:1.8rem;pointer-events:none;z-index:9;animation:fall linear forwards}
+@keyframes fall{to{transform:translateY(115vh) rotate(540deg)}}
+@media (max-width:480px){.panel{padding:12px}.deco{display:none}.key{width:38px}}
+</style>
+</head>
+<body>
+<header>
+  <span class="deco a">🌴</span><span class="deco b">🍦</span>
+  <h1>Pack verano jugando en inglés<span class="l2">Nivel 2 · Partes del cuerpo</span></h1>
+  <p class="sub">¡Ahora también con los órganos de adentro! 🧠❤️🫁 · ⏱️ 30 minutos</p>
+</header>
+<nav id="menu" aria-label="Menú de secciones"></nav>
+<main id="main"></main>
+<script>
+"use strict";
+
+/* ===== Utilidades ===== */
+const $ = (s, r = document) => r.querySelector(s);
+const el = (tag, cls, html) => { const e = document.createElement(tag); if (cls) e.className = cls; if (html != null) e.innerHTML = html; return e; };
+const shuffle = a => { const r = [...a]; for (let i = r.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [r[i], r[j]] = [r[j], r[i]]; } return r; };
+const pick = (a, n) => shuffle(a).slice(0, n);
+
+/* ===== Datos ===== */
+const WORDS = [
+  ["eye", "ojo", "👁️"], ["ear", "oreja", "👂"], ["nose", "nariz", "👃"], ["mouth", "boca", "👄"],
+  ["tooth", "diente", "🦷"], ["hand", "mano", "✋"], ["arm", "brazo", "💪"], ["leg", "pierna", "🦵"],
+  ["foot", "pie", "🦶"], ["bone", "hueso", "🦴"], ["brain", "cerebro", "🧠"], ["heart", "corazón", "❤️"],
+  ["lungs", "pulmones", "🫁"]
+].map(([en, es, icon]) => ({ en, es, icon }));
+const LONG = WORDS.filter(w => w.en.length >= 4);
+const others = (w, n) => pick(WORDS.filter(x => x !== w), n);
+const PAL = ["#27f0ff", "#ff4fd8", "#ffe44d", "#4dff9a", "#ff9a3d", "#b388ff"];
+
+/* ===== Servicios: sonido, voz, progreso ===== */
+class Sfx {
+  constructor() { this.ctx = null; }
+  unlock() {
+    if (!this.ctx) { const C = window.AudioContext || window.webkitAudioContext; if (C) this.ctx = new C(); }
+    if (this.ctx && this.ctx.state === "suspended") this.ctx.resume();
+  }
+  tone(f, t = 0, d = .15, type = "sine", v = .15) {
+    if (!this.ctx) return;
+    const o = this.ctx.createOscillator(), g = this.ctx.createGain(), s = this.ctx.currentTime + t;
+    o.type = type; o.frequency.value = f;
+    g.gain.setValueAtTime(v, s); g.gain.exponentialRampToValueAtTime(.001, s + d);
+    o.connect(g); g.connect(this.ctx.destination); o.start(s); o.stop(s + d);
+  }
+  play(name) {
+    const m = {
+      click: [[660, 0, .08]], pop: [[880, 0, .08]],
+      ok: [[523], [659, .1], [784, .2]],
+      bad: [[220, 0, .25, "sawtooth", .1], [165, .12, .3, "sawtooth", .1]],
+      win: [[523], [659, .12], [784, .24], [1047, .36, .4]]
+    };
+    (m[name] || []).forEach(a => this.tone(...a));
+  }
+}
+class Voice {
+  say(text) {
+    if (!("speechSynthesis" in window)) return;
+    const s = window.speechSynthesis; s.cancel();
+    const u = new SpeechSynthesisUtterance(text);
+    u.lang = "en-US"; u.rate = .8;
+    const v = s.getVoices().find(x => x.lang.replace("_", "-") === "en-US");
+    if (v) u.voice = v;
+    s.speak(u);
+  }
+}
+const sfx = new Sfx(), voice = new Voice();
+const progress = new Map();
+const mark = (id, pts, max) => { const p = progress.get(id); if (!p || pts / max > p.pts / p.max) progress.set(id, { pts, max }); };
+
+function confetti(n = 40) {
+  const E = ["🎉", "⭐", "🍦", "🌈", "✨", "🎈"];
+  for (let i = 0; i < n; i++) {
+    const s = el("span", "cf", E[i % E.length]);
+    s.style.left = Math.random() * 100 + "vw";
+    s.style.animationDuration = 2 + Math.random() * 2.5 + "s";
+    document.body.append(s); setTimeout(() => s.remove(), 5000);
+  }
+}
+function endScreen(box, id, pts, max, again) {
+  mark(id, pts, max);
+  const stars = Math.max(1, Math.round(pts / max * 3));
+  box.innerHTML = "";
+  const d = el("div", "end", `<div class="big">🏆</div><h3>¡Lo lograste!</h3><div class="stars">${"⭐".repeat(stars)}</div><p>Conseguiste ${pts} de ${max} puntos.</p>`);
+  const b = el("button", "btn alt", "🔄 Jugar otra vez");
+  b.onclick = () => { sfx.play("click"); again(); };
+  d.append(b); box.append(d); sfx.play("win"); confetti();
+}
+
+/* ===== 1. Vocabulario ===== */
+function vocab(body) {
+  [["🙂 Por fuera del cuerpo", WORDS.slice(0, 9)], ["🫁 Por dentro del cuerpo", WORDS.slice(9)]].forEach(([title, list]) => {
+    body.append(el("h3", "g", title));
+    const g = el("div", "vgrid");
+    list.forEach((w, i) => {
+      const c = el("button", "vc", `<span class="e">${w.icon}</span><b>${w.en}</b><small>${w.es}</small><small>🔊 toca para escuchar</small>`);
+      c.style.setProperty("--c", PAL[i % PAL.length]);
+      c.onclick = () => { voice.say(w.en); sfx.play("pop"); c.classList.remove("say"); void c.offsetWidth; c.classList.add("say"); };
+      g.append(c);
+    });
+    body.append(g);
+  });
+}
+
+/* ===== Juego de opciones (quiz, escucha, verdadero/falso) ===== */
+function choiceGame(body, id, makeRounds) {
+  const box = el("div"); body.append(box);
+  const start = () => {
+    const rounds = makeRounds(); let i = 0, pts = 0;
+    const show = () => {
+      const r = rounds[i]; let sel = null, miss = false;
+      const cls = r.cls || "";
+      box.innerHTML = "";
+      box.append(el("div", "prog", `Pregunta ${i + 1} de ${rounds.length}`));
+      const q = el("div", "prompt"); r.prompt(q); box.append(q);
+      const opts = el("div", "opts"); box.append(opts);
+      const btns = r.options.map(o => {
+        const b = el("button", "opt" + cls, o.label);
+        b.onclick = () => { sel = o; btns.forEach(x => x.classList.remove("sel")); b.classList.add("sel"); sfx.play("pop"); };
+        opts.append(b); return b;
+      });
+      const msg = el("div", "msg"), row = el("div", "center");
+      const check = el("button", "btn", "✅ Verificar"), nxt = el("button", "btn alt", "Siguiente ➡️");
+      nxt.hidden = true;
+      check.onclick = () => {
+        if (!sel) { msg.className = "msg no"; msg.textContent = "Primero elige una respuesta 👆"; return; }
+        const b = btns[r.options.indexOf(sel)];
+        if (sel.ok) {
+          b.className = "opt" + cls + " ok"; sfx.play("ok"); msg.className = "msg ok"; msg.textContent = "¡Correcto! 🎉";
+          if (!miss) pts++;
+          btns.forEach(x => x.disabled = true); check.hidden = false; check.hidden = true; nxt.hidden = false;
+          if (i === rounds.length - 1) nxt.textContent = "🏁 Terminar";
+          if (r.say) voice.say(r.say);
+        } else {
+          miss = true; b.classList.add("no"); sfx.play("bad"); msg.className = "msg no"; msg.textContent = "Uy, no es esa. ¡Intenta otra vez! 💪";
+          sel = null; setTimeout(() => b.classList.remove("no", "sel"), 500);
+        }
+      };
+      nxt.onclick = () => { sfx.play("click"); i++; i < rounds.length ? show() : endScreen(box, id, pts, rounds.length, start); };
+      row.append(check, nxt); box.append(msg, row);
+    };
+    show();
+  };
+  start();
+}
+const quizRounds = () => pick(WORDS, 5).map(w => ({
+  say: w.en,
+  prompt: q => { q.innerHTML = `<div class="big">${w.icon}</div><p>¿Cómo se dice <b>${w.es}</b> en inglés?</p>`; },
+  options: shuffle([{ label: w.en, ok: true }, ...others(w, 2).map(x => ({ label: x.en, ok: false }))])
+}));
+const listenRounds = () => pick(WORDS, 5).map(w => ({
+  say: w.en, cls: " ico",
+  prompt: q => {
+    q.innerHTML = "<p>Toca el botón, escucha la palabra y elige el dibujo correcto 🎧</p>";
+    const b = el("button", "btn pk", "🔊 Escuchar"); b.onclick = () => voice.say(w.en);
+    q.append(b); voice.say(w.en);
+  },
+  options: shuffle([{ label: w.icon, ok: true }, ...others(w, 3).map(x => ({ label: x.icon, ok: false }))])
+}));
+const tfRounds = () => pick(WORDS, 6).map(w => {
+  const truth = Math.random() < .5, shown = truth ? w : others(w, 1)[0];
+  return {
+    say: w.en,
+    prompt: q => { q.innerHTML = `<div class="big">${w.icon}</div><p>¿Es verdad que esto se dice <b>“${shown.en}”</b> en inglés?</p>`; },
+    options: [{ label: "✔️ Verdadero", ok: truth }, { label: "✖️ Falso", ok: !truth }]
+  };
+});
+
+/* ===== 3. Emparejar ===== */
+function matchGame(body) {
+  const box = el("div"); body.append(box);
+  const start = () => {
+    const items = pick(WORDS, 6), order = shuffle(items.map((_, i) => i));
+    const map = {}; let selL = null, firstScore = null;
+    box.innerHTML = "";
+    const msg = el("div", "msg"), cols = el("div", "cols"), L = el("div", "col"), R = el("div", "col");
+    const paint = () => {
+      lb.forEach((b, i) => { const m = i in map; b.className = "opt" + (i === selL ? " sel" : ""); b.style.borderColor = m ? PAL[i] : ""; b.style.background = m ? PAL[i] + "44" : ""; });
+      rb.forEach((b, p) => { const a = Object.keys(map).find(x => map[x] === order[p]); b.className = "opt ico"; b.style.borderColor = a !== undefined ? PAL[a] : ""; b.style.background = a !== undefined ? PAL[a] + "44" : ""; });
+    };
+    const lb = items.map((w, i) => { const b = el("button", "opt", w.en); b.onclick = () => { selL = i; voice.say(w.en); paint(); }; L.append(b); return b; });
+    const rb = order.map(k => {
+      const b = el("button", "opt ico", items[k].icon);
+      b.onclick = () => {
+        if (selL === null) { msg.className = "msg no"; msg.textContent = "Primero toca una palabra 👈"; return; }
+        Object.keys(map).forEach(a => { if (map[a] === k) delete map[a]; });
+        map[selL] = k; selL = null; msg.textContent = ""; sfx.play("pop"); paint();
+      };
+      R.append(b); return b;
+    });
+    const check = el("button", "btn", "✅ Verificar"), row = el("div", "center");
+    check.onclick = () => {
+      if (Object.keys(map).length < items.length) { msg.className = "msg no"; msg.textContent = "Une todas las palabras con su dibujo 🔗"; return; }
+      const wrong = items.map((_, i) => i).filter(i => map[i] !== i);
+      if (firstScore === null) firstScore = items.length - wrong.length;
+      if (!wrong.length) { endScreen(box, "match", firstScore, items.length, start); return; }
+      sfx.play("bad"); msg.className = "msg no"; msg.textContent = "¡Casi! Las parejas rojas no coinciden. Cámbialas 🔁";
+      wrong.forEach(i => { lb[i].style.borderColor = "#ff5d73"; lb[i].classList.add("no"); delete map[i]; });
+      setTimeout(paint, 1000);
+    };
+    cols.append(L, R); row.append(check); box.append(cols, msg, row); paint();
+  };
+  start();
+}
+
+/* ===== 4. Revoltijo ===== */
+function scrambleGame(body) {
+  const box = el("div"); body.append(box);
+  const scr = s => { let a; do { a = shuffle([...s]); } while (a.join("") === s); return a; };
+  const start = () => {
+    const items = pick(WORDS, 5); let i = 0, pts = 0;
+    const show = () => {
+      const w = items[i], word = w.en.toUpperCase(), letters = scr(word);
+      let used = [], miss = false, done = false;
+      box.innerHTML = "";
+      box.append(el("div", "prog", `Palabra ${i + 1} de ${items.length}`));
+      box.append(el("div", "prompt", `<div class="big">${w.icon}</div><p>Ordena las letras para escribir <b>${w.es}</b> en inglés</p>`));
+      const ans = el("div", "ans"), pool = el("div", "tiles"), msg = el("div", "msg"), row = el("div", "center");
+      const draw = () => {
+        pool.innerHTML = ""; ans.innerHTML = "";
+        letters.forEach((c, k) => { if (used.includes(k)) return; const b = el("button", "tile", c); b.onclick = () => { if (done) return; used.push(k); sfx.play("pop"); draw(); }; pool.append(b); });
+        used.forEach(k => { const b = el("button", "tile", letters[k]); b.onclick = () => { if (done) return; used = used.filter(x => x !== k); draw(); }; ans.append(b); });
+      };
+      const check = el("button", "btn", "✅ Verificar"), clear = el("button", "btn alt", "🧹 Borrar"), nxt = el("button", "btn pk", i === items.length - 1 ? "🏁 Terminar" : "Siguiente ➡️");
+      nxt.hidden = true;
+      clear.onclick = () => { if (!done) { used = []; draw(); } };
+      check.onclick = () => {
+        const t = used.map(k => letters[k]).join("");
+        if (t.length < word.length) { msg.className = "msg no"; msg.textContent = "Usa todas las letras 🔤"; return; }
+        if (t === word) {
+          done = true; if (!miss) pts++; sfx.play("ok"); voice.say(w.en); msg.className = "msg ok"; msg.textContent = "¡Muy bien! 🎉";
+          check.hidden = true; clear.hidden = true; nxt.hidden = false;
+        } else { miss = true; sfx.play("bad"); msg.className = "msg no"; msg.textContent = "Todavía no. ¡Inténtalo otra vez! 💪"; used = []; draw(); }
+      };
+      nxt.onclick = () => { sfx.play("click"); i++; i < items.length ? show() : endScreen(box, "scramble", pts, items.length, start); };
+      row.append(check, clear, nxt); box.append(ans, pool, msg, row); draw();
+    };
+    show();
+  };
+  start();
+}
+
+/* ===== 5. Sopa de letras ===== */
+function searchGame(body) {
+  const box = el("div"); body.append(box);
+  const N = 10, AB = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  const build = ws => {
+    for (;;) {
+      const g = Array.from({ length: N }, () => Array(N).fill("")); let ok = true;
+      for (const w of ws) {
+        let done = false;
+        for (let t = 0; t < 80 && !done; t++) {
+          const h = Math.random() < .5;
+          const r = Math.floor(Math.random() * (h ? N : N - w.length + 1)), c = Math.floor(Math.random() * (h ? N - w.length + 1 : N));
+          const cells = [...w].map((_, k) => h ? [r, c + k] : [r + k, c]);
+          if (cells.every(([y, x]) => g[y][x] === "")) { cells.forEach(([y, x], k) => { g[y][x] = w[k]; }); done = true; }
+        }
+        if (!done) { ok = false; break; }
+      }
+      if (ok) return g.map(row => row.map(ch => ch || AB[Math.floor(Math.random() * 26)]));
+    }
+  };
+  const start = () => {
+    const items = pick(LONG, 8), words = items.map(w => w.en.toUpperCase()), g = build(words);
+    const found = new Set(); let a = null, b = null, errors = 0;
+    box.innerHTML = "";
+    const wl = el("div", "wl"), grid = el("div", "grid"), msg = el("div", "msg"), row = el("div", "center");
+    const chips = items.map(w => { const c = el("span", "chip", `${w.icon} ${w.en}`); wl.append(c); return c; });
+    const btn = g.map((r, y) => r.map((ch, x) => {
+      const c = el("button", "cell", ch);
+      c.onclick = () => { if (!a || b) { a = [y, x]; b = null; } else b = [y, x]; sfx.play("pop"); paintSel(); };
+      grid.append(c); return c;
+    }));
+    const line = () => {
+      if (!a || !b) return a ? [a] : [];
+      const [y1, x1] = a, [y2, x2] = b;
+      if (y1 === y2) { const lo = Math.min(x1, x2), hi = Math.max(x1, x2); return Array.from({ length: hi - lo + 1 }, (_, k) => [y1, lo + k]); }
+      if (x1 === x2) { const lo = Math.min(y1, y2), hi = Math.max(y1, y2); return Array.from({ length: hi - lo + 1 }, (_, k) => [lo + k, x1]); }
+      return null;
+    };
+    const paintSel = () => {
+      btn.flat().forEach(c => c.classList.remove("sel"));
+      const l = line();
+      if (l === null) { msg.className = "msg no"; msg.textContent = "Las letras deben estar en línea recta: ➡️ o ⬇️"; b = null; return; }
+      msg.textContent = ""; l.forEach(([y, x]) => btn[y][x].classList.add("sel"));
+    };
+    const clear = () => { a = b = null; btn.flat().forEach(c => c.classList.remove("sel")); };
+    const check = el("button", "btn", "✅ Verificar"), del = el("button", "btn alt", "🧹 Borrar");
+    del.onclick = () => { clear(); msg.textContent = ""; };
+    check.onclick = () => {
+      const l = line();
+      if (!a || !b || !l) { msg.className = "msg no"; msg.textContent = "Toca la primera letra y luego la última de una palabra 👆"; return; }
+      const t = l.map(([y, x]) => g[y][x]).join("");
+      const k = words.findIndex(w => !found.has(w) && (w === t || [...w].reverse().join("") === t));
+      if (k >= 0) {
+        found.add(words[k]); l.forEach(([y, x]) => { const c = btn[y][x]; c.classList.remove("sel"); c.classList.add("f"); c.style.background = PAL[k % PAL.length]; });
+        chips[k].classList.add("f"); chips[k].style.background = PAL[k % PAL.length];
+        sfx.play("ok"); voice.say(items[k].en); msg.className = "msg ok"; msg.textContent = `¡Encontraste ${items[k].en}! 🎉`; a = b = null;
+        if (found.size === words.length) setTimeout(() => endScreen(box, "search", Math.max(1, 8 - errors), 8, start), 900);
+      } else {
+        errors++; sfx.play("bad"); msg.className = "msg no"; msg.textContent = "Esa no es una palabra de la lista. ¡Sigue buscando! 🔎";
+        l.forEach(([y, x]) => { const c = btn[y][x]; c.classList.add("no"); setTimeout(() => c.classList.remove("no"), 450); }); clear();
+      }
+    };
+    row.append(check, del); box.append(wl, grid, msg, row);
+  };
+  start();
+}
+
+/* ===== 6. Memoria ===== */
+function memoryGame(body) {
+  const box = el("div"); body.append(box);
+  const start = () => {
+    const items = pick(WORDS, 6); let open = [], lock = false, moves = 0, pairs = 0;
+    box.innerHTML = "";
+    const info = el("div", "prog", "Intentos: 0"), grid = el("div", "mem"); box.append(info, grid);
+    shuffle(items.flatMap(w => [{ w, t: "i" }, { w, t: "w" }])).forEach(d => {
+      const c = el("button", "card", `<div class="in"><div class="f1">❓</div><div class="f2">${d.t === "i" ? `<span class="e">${d.w.icon}</span>` : d.w.en}</div></div>`);
+      c.onclick = () => {
+        if (lock || c.classList.contains("up")) return;
+        c.classList.add("up"); voice.say(d.w.en); open.push({ c, d });
+        if (open.length < 2) return;
+        moves++; info.textContent = `Intentos: ${moves}`;
+        const [x, y] = open; open = [];
+        if (x.d.w === y.d.w) {
+          pairs++; sfx.play("ok"); x.c.classList.add("done"); y.c.classList.add("done");
+          if (pairs === items.length) setTimeout(() => endScreen(box, "memory", moves <= 8 ? 6 : moves <= 12 ? 4 : 2, 6, start), 1000);
+        } else { lock = true; sfx.play("bad"); setTimeout(() => { x.c.classList.remove("up"); y.c.classList.remove("up"); lock = false; }, 1000); }
+      };
+      grid.append(c);
+    });
+  };
+  start();
+}
+
+/* ===== 7. Paleta que se derrite ===== */
+const RAYS = Array.from({ length: 12 }, (_, i) => `<line x1="180" y1="10" x2="180" y2="-4" transform="rotate(${i * 30} 180 48)"/>`).join("");
+const POP = `<svg viewBox="0 0 220 300" role="img" aria-label="Paleta que se derrite" data-mood="h" style="--m:0">
+<defs><linearGradient id="gp" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#27f0ff"/><stop offset=".5" stop-color="#ff4fd8"/><stop offset="1" stop-color="#ffe44d"/></linearGradient>
+<radialGradient id="gs"><stop offset="0" stop-color="#fffbb0"/><stop offset="1" stop-color="#ff9a3d"/></radialGradient></defs>
+<g class="sun"><g class="rays" stroke="#ffe44d" stroke-width="4" stroke-linecap="round">${RAYS}</g><circle cx="180" cy="48" r="28" fill="url(#gs)"/></g>
+<ellipse class="pud" cx="110" cy="286" rx="70" ry="10" fill="url(#gp)"/>
+<g class="wrap"><rect x="99" y="190" width="22" height="94" rx="11" fill="#e8c07d"/>
+<g class="body"><path d="M60 200V80A50 50 0 0 1 160 80V200Z" fill="url(#gp)" stroke="#fff" stroke-opacity=".7" stroke-width="3"/><rect x="72" y="52" width="9" height="100" rx="4.5" fill="#fff" opacity=".4"/></g>
+<g class="face" stroke="#10113a" stroke-width="4" stroke-linecap="round" fill="none"><circle cx="92" cy="100" r="5" fill="#10113a" stroke="none"/><circle cx="128" cy="100" r="5" fill="#10113a" stroke="none"/><path class="mh" d="M92 118Q110 136 128 118"/><path class="mw" d="M95 126Q110 116 125 126"/><path class="ms" d="M95 130Q110 112 125 130"/></g>
+<g class="drips" fill="url(#gp)"><ellipse cx="72" cy="202" rx="5" ry="8"/><ellipse cx="110" cy="202" rx="5" ry="8" style="animation-delay:.9s"/><ellipse cx="148" cy="202" rx="5" ry="8" style="animation-delay:1.7s"/></g></g>
+<g class="sp" font-size="20"><text x="30" y="70">✨</text><text x="168" y="135">✨</text><text x="22" y="190">⭐</text></g></svg>`;
+
+function meltGame(body) {
+  const box = el("div"); body.append(box);
+  const start = () => {
+    const w = pick(LONG, 1)[0], W = w.en.toUpperCase(), tried = new Set(); let wrong = 0, over = false;
+    box.innerHTML = `<div class="stage">${POP}</div>`;
+    const svg = $("svg", box);
+    const hint = el("p", "prompt", `Pista: ${w.icon} <b>${w.es}</b><br>¿Cómo se escribe en inglés?`);
+    const slots = el("div", "slots"), kb = el("div", "kb"), msg = el("div", "msg"), row = el("div", "center");
+    const again = el("button", "btn pk", "🍦 Otra paleta"); again.hidden = true; again.onclick = () => { sfx.play("click"); start(); };
+    const drawSlots = () => { slots.innerHTML = [...W].map(c => `<div class="slot">${tried.has(c) ? c : ""}</div>`).join(""); };
+    row.append(again); box.append(hint, slots, kb, msg, row); drawSlots();
+    const finish = () => { over = true; kb.querySelectorAll("button").forEach(k => { k.disabled = true; }); again.hidden = false; };
+    "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("").forEach(L => {
+      const k = el("button", "key", L);
+      k.onclick = () => {
+        if (over) return;
+        tried.add(L); k.disabled = true;
+        if (W.includes(L)) {
+          k.classList.add("ok"); sfx.play("ok"); drawSlots();
+          if ([...W].every(c => tried.has(c))) { finish(); svg.classList.add("win"); msg.className = "msg ok"; msg.textContent = "¡Salvaste la paleta! 🎉"; mark("melt", 6 - wrong, 6); confetti(); sfx.play("win"); voice.say(w.en); }
+        } else {
+          k.classList.add("no"); wrong++; sfx.play("bad");
+          svg.style.setProperty("--m", wrong); svg.classList.add("melt"); svg.dataset.mood = wrong >= 5 ? "s" : wrong >= 3 ? "w" : "h";
+          msg.className = "msg no"; msg.textContent = `¡Se derrite! Te quedan ${6 - wrong} oportunidades 🔥`;
+          if (wrong >= 6) { finish(); msg.textContent = "¡Oh no, la paleta se derritió! 😢 Prueba con otra."; }
+        }
+      };
+      kb.append(k);
+    });
+  };
+  start();
+}
+
+/* ===== 10. Final ===== */
+function finalScreen(body) {
+  const games = SECTIONS.filter(s => s.id !== "vocab" && s.id !== "final");
+  let total = 0;
+  const rows = games.map(s => {
+    const p = progress.get(s.id), r = p ? p.pts / p.max : 0; total += r;
+    return `<li>${s.icon} ${s.name}: ${p ? "⭐".repeat(Math.max(1, Math.round(r * 3))) : "¡aún te falta jugarlo!"}</li>`;
+  }).join("");
+  const avg = total / games.length;
+  const text = avg >= .75 ? "¡Eres un campeón del inglés! 🥇" : avg >= .4 ? "¡Muy buen trabajo, sigue practicando! 🥈" : "¡Buen comienzo! Juega de nuevo y gana más estrellas 🥉";
+  const d = el("div", "end", `<div class="big">🎓</div><h3>¡Terminaste la clase!</h3><p>${text}</p><ul>${rows}</ul><p>Repite en voz alta las partes del cuerpo con tu familia 👨‍👩‍👧</p>`);
+  const b = el("button", "btn alt", "🏠 Volver al inicio"); b.onclick = () => show(0);
+  d.append(b); body.append(d); sfx.play("win"); confetti(); voice.say("Great job!");
+}
+
+/* ===== Secciones y navegación ===== */
+const SECTIONS = [
+  { id: "vocab", icon: "📚", name: "Vocabulario", how: "¡Toca cada tarjeta para escuchar cómo se dice en inglés! 🔊 Repite en voz alta.", mount: vocab },
+  { id: "quiz", icon: "🧩", name: "Quiz", how: "Mira el dibujo, elige la palabra correcta en inglés y toca Verificar.", mount: b => choiceGame(b, "quiz", quizRounds) },
+  { id: "match", icon: "🔗", name: "Emparejar", how: "Toca una palabra y luego su dibujo. Cuando termines, toca Verificar.", mount: matchGame },
+  { id: "scramble", icon: "🔀", name: "Revoltijo", how: "Las letras están desordenadas. Tócalas en orden para formar la palabra y toca Verificar.", mount: scrambleGame },
+  { id: "search", icon: "🔎", name: "Sopa de letras", how: "Busca en el tablero las palabras de la lista. Están en horizontal ➡️ o vertical ⬇️. Toca la primera letra, luego la última y pulsa Verificar.", mount: searchGame },
+  { id: "memory", icon: "🃏", name: "Memoria", how: "Da vuelta dos tarjetas: busca cada dibujo con su palabra en inglés. ¡Escucha cada una!", mount: memoryGame },
+  { id: "melt", icon: "🍦", name: "Paleta", how: "¡Salva la paleta del sol! Toca letras para adivinar la palabra en inglés. Cada error la derrite un poquito 🔥", mount: meltGame },
+  { id: "listen", icon: "🎧", name: "Escucha", how: "Escucha la palabra en inglés y elige el dibujo correcto. Luego toca Verificar.", mount: b => choiceGame(b, "listen", listenRounds) },
+  { id: "tf", icon: "✔️", name: "Verdadero / Falso", how: "Mira el dibujo y la palabra. ¿Están bien juntos? Elige y toca Verificar.", mount: b => choiceGame(b, "tf", tfRounds) },
+  { id: "final", icon: "🏆", name: "Final", how: "¡Mira cuántas estrellas ganaste!", mount: finalScreen, always: true }
+];
+const nav = $("#menu"), main = $("#main");
+
+function show(i, scroll = true) {
+  sfx.unlock(); sfx.play("click");
+  SECTIONS.forEach((s, k) => { s.panel.classList.toggle("on", k === i); s.btn.classList.toggle("on", k === i); });
+  const s = SECTIONS[i];
+  if (!s.ready || s.always) { s.body.innerHTML = ""; s.mount(s.body); s.ready = true; }
+  if (scroll) window.scrollTo({ top: nav.offsetTop - 6, behavior: "smooth" });
+}
+SECTIONS.forEach((s, i) => {
+  const b = el("button", "", `<span class="ic">${s.icon}</span><span>${s.name}</span>`);
+  b.style.setProperty("--c", PAL[i % 5]); b.onclick = () => show(i); nav.append(b); s.btn = b;
+  const p = el("section", "panel", `<h2>${s.icon} ${s.name}</h2><p class="how">${s.how}</p>`);
+  s.body = el("div"); p.append(s.body);
+  if (i < SECTIONS.length - 1) {
+    const n = el("div", "center"), nb = el("button", "btn pk", `Siguiente: ${SECTIONS[i + 1].name} ➡️`);
+    nb.onclick = () => show(i + 1); n.append(nb); p.append(n);
+  }
+  s.panel = p; main.append(p);
+});
+document.addEventListener("pointerdown", () => sfx.unlock(), { once: true });
+show(0, false);
+</script>
+</body>
+</html>
